@@ -1,5 +1,5 @@
 import React from "react";
-import { BiDownArrow, BiWorld } from "react-icons/bi";
+import {BiWorld } from "react-icons/bi";
 import { CiCircleInfo, CiCreditCard1 } from "react-icons/ci";
 import { FaCcVisa } from "react-icons/fa6";
 import { FaCcMastercard } from "react-icons/fa6";
@@ -8,6 +8,8 @@ import { FaGooglePay } from "react-icons/fa";
 import { FaCircle } from "react-icons/fa";
 import { IoIosInformationCircle } from "react-icons/io";
 import { FaAngleDown } from "react-icons/fa6";
+import { RiRadioButtonFill } from "react-icons/ri";
+
 
 const LeftPoertion = () => {
   return (
@@ -113,9 +115,15 @@ const LeftPoertion = () => {
 
           <div className=" border-2 border-gray-700 rounded-lg p-4">
             
+
+            <div className=" flex flex-row items-center justify-between">
             <div className=" flex flex-row items-center">
-              <CiCreditCard1 className="m-2 text-2xl" />
+              <CiCreditCard1 className="m-2 text-2xl  border w-10 rounded-md" />
               <h1>Credit & debit card</h1>
+            </div>
+            
+            <RiRadioButtonFill size={30}/>
+
             </div>
 
             <div className=" m-2 text-xl flex flex-row items-center">
@@ -190,7 +198,7 @@ const LeftPoertion = () => {
             </div>
 
             <div>
-              <div className=" bg-black rounded-xl flex flex-row items-center justify-center p-2  mt-8 ">
+              <div className=" bg-black rounded-xl flex flex-row items-center justify-center p-2  mt-8 m-4 md:w-fit px-6">
                 <MdLock className=" text-white" />
                 <h1 className=" text-white p-2 font-semibold text-lg">
                   Confirm & pay
@@ -219,7 +227,7 @@ const LeftPoertion = () => {
 
           <div className=" mt-4">
             <div className=" w-fit bg-[#B4DFC4] opacity-90  mt-16  shadow-sm  rounded-2xl ">
-              <p className=" items-center p-1 font-semibold ml-1 text-[#299764] text-xs">
+              <p className=" items-center p-1 font-semibold ml-1 text-[#299764] text-xs md:hidden">
               🐖 You saved (price)
               </p>
             </div>

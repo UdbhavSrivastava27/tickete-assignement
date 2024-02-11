@@ -1,7 +1,7 @@
 import React from "react";
 import Gallery from "../Assest/Gallery.png";
 import { IoStarHalfSharp } from "react-icons/io5";
-import { FaAngleRight, FaTicket } from "react-icons/fa6";
+import { FaAngleRight } from "react-icons/fa6";
 import { FaAngleLeft } from "react-icons/fa6";
 import { MdAirplaneTicket } from "react-icons/md";
 import { FaCalendarDay } from "react-icons/fa";
@@ -17,7 +17,7 @@ const RightPortion = () => {
   return (
     <div className="border-2 md:w-3/12 pb-6 h-1/2 rounded-3xl flex flex-col justify-around my-6 md:-mt-20">
       <div className=" flex flex-col px-4 justify-center">
-        <img src={Gallery} className=" w-auto h-auto mt-4 rounded-2xl" />
+        <img src={Gallery} alt="gallery" className=" w-auto h-auto mt-4 rounded-2xl shadow-lg shadow-blue-100" />
 
         <div className=" flex flex-row p-3 items-center justify-start  ">
           <IoStarHalfSharp className=" text-orange-600" />
